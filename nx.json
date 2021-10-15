@@ -1,7 +1,7 @@
 {
   "npmScope": "jankless",
   "affected": {
-    "defaultBase": "master"
+    "defaultBase": "main"
   },
   "implicitDependencies": {
     "package.json": {
@@ -26,13 +26,5 @@
       }
     ]
   },
-  "projects": {
-    "demo": {
-      "tags": []
-    },
-    "demo-e2e": {
-      "tags": [],
-      "implicitDependencies": ["demo"]
-    }
-  }
+  "projects": {}
 }
