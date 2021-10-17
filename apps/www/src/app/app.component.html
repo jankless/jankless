@@ -1,0 +1,21 @@
+<header>
+  <small>JANKLESS</small>
+</header>
+<main>
+  <h1>This is an H1</h1>
+  <h2>This is an H2</h2>
+  <h3>This is an H3</h3>
+  <h4>This is an H4</h4>
+  <h5>This is an H5</h5>
+  <h6>This is an H6</h6>
+  <form>
+    <input placeholder="Enter Name" type="text" />
+    <br />
+    <button type="button" (click)="handleClick($event)">Post Me!</button>
+    <select>
+      <option value="warren">Warren</option>
+      <option value="dugan">Dugan</option>
+    </select>
+  </form>
+</main>
+<footer>&copy; {{ today | date: 'fullTime' }}</footer>

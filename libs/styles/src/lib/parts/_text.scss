@@ -1,0 +1,67 @@
+h1 {
+  font-size: var(--font-size-jumbo-title);
+}
+
+h2 {
+  font-size: var(--font-size-title);
+}
+
+h3 {
+  font-size: var(--font-size-sub-title);
+}
+
+h4 {
+  font-size: var(--font-size-sub-title);
+}
+
+h5 {
+  font-size: var(--font-size-small-title);
+}
+
+h6 {
+  font-size: var(--font-size-small-title);
+}
+
+p {
+  font-size: var(--font-size-body);
+}
+
+small {
+  font-size: var(--font-size-small);
+}
+
+a {
+  text-decoration: none;
+  color: var(--links);
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  & > code,
+  & > strong {
+    color: inherit;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  color: var(--text-bright);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong,
+th {
+  font-weight: 600;
+}

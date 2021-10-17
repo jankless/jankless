@@ -1,0 +1,23 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-alt: #1a242f;
+    --background-body: #202b38;
+    --background: #161f27;
+    --border: #526980;
+    --button-base: #0c151c;
+    --button-hover: #040a0f;
+    --code: #ffbe85;
+    --form-placeholder: #a9a9a9;
+    --form-text: #fff;
+    --highlight: #efdb43;
+    --links: #41adff;
+    --scrollbar-thumb-hover: color-mod(var(--scrollbar-thumb) lightness(-30%));
+    --scrollbar-thumb: var(--button-hover);
+    --select-arrow: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 0 24 24' width='24px' fill='%23efefef'%3E%3Cpath d='M24 24H0V0h24v24z' fill='none' opacity='.87'/%3E%3Cpath d='M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z'/%3E%3C/svg%3E");
+    --selection: #1c76c5;
+    --text-bright: #fff;
+    --text-main: #dbdbdb;
+    --text-muted: #a9b1ba;
+    --variable: #d941e2;
+  }
+}

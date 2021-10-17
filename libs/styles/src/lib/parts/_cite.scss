@@ -1,0 +1,39 @@
+q {
+  &:before {
+    content: none;
+  }
+
+  &:after {
+    content: none;
+  }
+}
+
+blockquote,
+q {
+  border-left: 4px solid var(--focus);
+  margin: 1.5em 0;
+  padding: 0.5em 1em;
+  font-style: italic;
+}
+
+blockquote {
+  & > footer {
+    font-style: normal;
+    border: 0;
+  }
+
+  cite {
+    font-style: normal;
+  }
+}
+
+address {
+  font-style: normal;
+}
+
+mark {
+  background-color: var(--highlight);
+  border-radius: 2px;
+  padding: 0 2px 0 2px;
+  color: #000;
+}
