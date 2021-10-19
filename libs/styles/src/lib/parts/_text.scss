@@ -11,17 +11,18 @@ h3 {
 }
 
 h4 {
-  font-size: var(--font-size-sub-title);
+  font-size: var(--font-size-small-title);
 }
 
 h5 {
-  font-size: var(--font-size-small-title);
+  font-size: var(--font-size-body);
 }
 
 h6 {
-  font-size: var(--font-size-small-title);
+  font-size: var(--font-size-small);
 }
 
+body,
 p {
   font-size: var(--font-size-body);
 }
@@ -32,36 +33,16 @@ small {
 
 a {
   text-decoration: none;
-  color: var(--links);
+  color: var(--link-color);
 
   &:hover {
     text-decoration: underline;
   }
-
-  & > code,
-  & > strong {
-    color: inherit;
-  }
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-strong {
-  color: var(--text-bright);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-b,
-strong,
-th {
+legend {
+  font-size: var(--font-size-small);
   font-weight: 600;
+  padding-left: var(--input-padding-x);
+  padding-right: var(--input-padding-x);
 }

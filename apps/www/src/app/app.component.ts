@@ -1,21 +1,15 @@
-import { Component, OnChanges } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit, Renderer2 } from '@angular/core';
 
 @Component({
-  selector: 'jankless-root',
+  selector: 'jankless',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  // changeDetection: ChangeDetectionStrategy.OnPush,
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class AppComponent implements OnChanges {
-  today = new Date();
+export class AppComponent implements OnInit {
+  constructor(private renderer: Renderer2) {}
 
-  ngOnChanges() {
-    console.log('changes');
-    this.today = new Date();
-  }
-
-  handleClick(event: MouseEvent) {
-    console.log(event);
-    this.today = new Date();
+  ngOnInit() {
+    console.log(this.renderer);
   }
 }

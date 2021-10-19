@@ -1,3 +1,10 @@
+fieldset {
+  margin: initial;
+  padding: var(--default-padding);
+  border: 1px var(--background) solid;
+  border-radius: var(--border-radius);
+}
+
 button,
 input,
 textarea {
@@ -22,11 +29,6 @@ select {
   display: block;
 }
 
-[type='checkbox'],
-[type='radio'] {
-  display: initial;
-}
-
 input,
 button,
 textarea,
@@ -47,13 +49,10 @@ input[type='button'] {
   background-color: var(--button-base);
   padding-right: var(--button-padding-x);
   padding-left: var(--button-padding-x);
-}
 
-button:hover,
-input[type='submit']:hover,
-input[type='reset']:hover,
-input[type='button']:hover {
-  background: var(--button-hover);
+  &:hover {
+    background: var(--button-hover);
+  }
 }
 
 input {
@@ -67,8 +66,10 @@ input {
 
   &[type='checkbox'],
   &[type='radio'] {
+    display: initial;
     height: 1em;
     width: 1em;
+    margin: 4px;
   }
 
   &[type='radio'] {
@@ -83,7 +84,7 @@ input {
 
 label {
   vertical-align: middle;
-  margin-bottom: 4px;
+  margin: initial;
   display: inline-block;
 }
 
@@ -112,6 +113,7 @@ textarea {
 }
 
 select {
+  background-color: var(--background);
   background: var(--background) var(--select-arrow) calc(100% - 10px) 50% / 20px no-repeat;
   padding-right: 35px;
 

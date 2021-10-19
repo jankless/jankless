@@ -1,14 +1,7 @@
 @import './presets/_base.scss';
 
-html {
-  scrollbar-color: var(--scrollbar-thumb) var(--background-body);
-  scrollbar-width: thin;
-}
-
 body {
   font-family: var(--font-family);
-  word-wrap: break-word;
   color: var(--text-main);
   background: var(--background-body);
-  text-rendering: optimizeLegibility;
 }
