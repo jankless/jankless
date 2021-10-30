@@ -21,7 +21,6 @@ export class AppComponent implements OnInit {
     const clampFunc = `font-size: clamp(${minFontSize}rem, ${yAxisIntersection.toFixed(4)}rem + ${(slope * 100).toFixed(
       4
     )}vw, ${maxFontSize}rem);`;
-    console.log(clampFunc);
   }
 
   handleSubmit(event: any) {
