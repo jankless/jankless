@@ -27,18 +27,8 @@
     ]
   },
   "projects": {
-    "elements": {
+    "docs": {
       "tags": []
-    },
-    "styles": {
-      "tags": []
-    },
-    "www": {
-      "tags": []
-    },
-    "www-e2e": {
-      "tags": [],
-      "implicitDependencies": ["www"]
     }
   }
 }
