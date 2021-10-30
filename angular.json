@@ -41,10 +41,6 @@
                   "with": "apps/docs/src/environments/environment.prod.ts"
                 }
               ],
-              "index": {
-                "input": "apps/docs/src/index.prod.html",
-                "output": "index.html"
-              },
               "outputHashing": "all"
             },
             "development": {
