@@ -1,0 +1,27 @@
+:root {
+  --background-color: #e1e1e1;
+  --background-color-body: #f9f9f9;
+  --border-radius: 4px;
+  --border-style: solid;
+  --border-width: 2px;
+  --color: #3f3f3f;
+  --red: #c60030;
+  --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
+  --font-size: clamp(1rem, 0.8045rem + 0.9963vw, 2rem);
+  --gap: clamp(0.25rem, 0.2011rem + 0.2491vw, 0.5rem);
+  --gap-large: clamp(0.5rem, 0.4022rem + 0.4981vw, 1rem);
+  --gap-extra-large: clamp(1rem, 0.8045rem + 0.9963vw, 2rem);
+  --brand: #09cdae;
+  --title-font-size: clamp(2rem, 1.8045rem + 0.9963vw, 3rem);
+  --title-font-weight: 600;
+}
+
+body {
+  background-color: var(--background-color-body);
+  color: var(--color);
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  margin: 0;
+  padding: var(--gap-large);
+}

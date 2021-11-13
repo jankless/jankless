@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'jankless-root',
+  selector: 'body',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })

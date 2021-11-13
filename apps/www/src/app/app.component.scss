@@ -1,0 +1,14 @@
+main {
+  display: grid;
+  place-items: center;
+  height: calc(100vh - var(--gap-large) - var(--gap-large));
+}
+
+img {
+  max-width: 640px;
+}
+
+.fix-bottom {
+  position: fixed;
+  bottom: calc(var(--gap-extra-large) + var(--gap-large));
+}
