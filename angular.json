@@ -176,7 +176,7 @@
         "sync": {
           "builder": "@nrwl/workspace:run-commands",
           "options": {
-            "commands": "aws s3 sync dist/www/ s3://${{ secrets.AWS_S3_BUCKET_NAME }} --acl public-read --delete --cache-control max-age=604800"
+            "command": "aws s3 sync dist/www/ s3://${{ secrets.AWS_S3_BUCKET_NAME }} --acl public-read --delete --cache-control max-age=604800"
           }
         },
         "invalidate": {
