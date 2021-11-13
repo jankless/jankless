@@ -1,10 +1,10 @@
-name: Build & Deploy
+name: Deploy
 on:
   push:
     branches: [main]
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     environment: Production
     steps:
@@ -31,27 +31,18 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Upload to GitHub
-        if: success()
-        uses: actions/upload-artifact@v1
-        with:
-          name: dist
-          path: dist
-
-  deploy:
-    runs-on: ubuntu-latest
-    needs: build
-    environment: Production
-    steps:
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
+        if: success()
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ secrets.AWS_REGION }}
 
       - name: 'Sync GitHub Artifact with S3 Bucket'
+        if: success()
         run: npm run sync
 
       - name: 'Invalidate CloudFront Distribution Cache'
+        if: success()
         run: npm run invalidate
