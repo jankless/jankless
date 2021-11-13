@@ -172,14 +172,6 @@
             "jestConfig": "apps/www/jest.config.js",
             "passWithNoTests": true
           }
-        },
-        "deploy": {
-          "builder": "@nrwl/workspace:run-commands",
-          "options": {
-            "bucket": "",
-            "distribution": "",
-            "command": "--bucket --distribution"
-          }
         }
       }
     }
