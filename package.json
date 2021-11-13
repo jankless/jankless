@@ -6,9 +6,9 @@
     "ng": "nx",
     "postinstall": "node ./decorate-angular-cli.js && ngcc --properties es2015 browser module main",
     "start": "nx serve",
-    "build": "nx affected:build",
-    "sync": "nx affected:sync",
-    "invalidate": "nx affected:invalidate",
+    "build": "nx run-many --target=build --all --prod",
+    "sync": "nx run-many --target=sync --all",
+    "invalidate": "nx run-many --target=invalidate --all",
     "test": "nx test",
     "format": "nx format"
   },
