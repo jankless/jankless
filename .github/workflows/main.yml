@@ -31,7 +31,7 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Archive Build
+      - name: Upload to GitHub
         if: success()
         uses: actions/upload-artifact@v1
         with:
@@ -48,10 +48,9 @@ jobs:
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          role-to-assume: ${{ secrets.ROLE_TO_ASSUME }}
           aws-region: ${{ secrets.AWS_REGION }}
 
-      - name: 'Sync S3 Bucket'
+      - name: 'Sync GitHub Artifact with S3 Bucket'
         run: npm run sync
 
       - name: 'Invalidate CloudFront Distribution Cache'
