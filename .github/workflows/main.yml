@@ -44,7 +44,6 @@ jobs:
         run: npm run sync
         env:
           bucket: ${{ secrets.AWS_S3_BUCKET_NAME }}
-          id:
 
       - name: 'Invalidate CloudFront Distribution Cache'
         if: success()
