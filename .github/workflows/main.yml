@@ -42,7 +42,12 @@ jobs:
       - name: 'Sync GitHub Artifact with S3 Bucket'
         if: success()
         run: npm run sync
+        env:
+          bucket: ${{ secrets.AWS_S3_BUCKET_NAME }}
+          id:
 
       - name: 'Invalidate CloudFront Distribution Cache'
         if: success()
         run: npm run invalidate
+        env:
+          id: ${{ secrets.AWS_CLOUDFRONT_DISTRIBUTION_ID }}
