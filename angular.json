@@ -86,7 +86,8 @@
             "passWithNoTests": true
           }
         }
-      }
+      },
+      "tags": []
     },
     "html": {
       "projectType": "library",
@@ -124,7 +125,8 @@
             "lintFilePatterns": ["libs/html/src/**/*.ts", "libs/html/src/**/*.html"]
           }
         }
-      }
+      },
+      "tags": []
     },
     "ui": {
       "projectType": "library",
@@ -162,7 +164,8 @@
             "lintFilePatterns": ["libs/ui/src/**/*.ts", "libs/ui/src/**/*.html"]
           }
         }
-      }
+      },
+      "tags": []
     },
     "www": {
       "projectType": "application",
@@ -261,34 +264,8 @@
             "command": "aws cloudfront create-invalidation --distribution-id {args.id} --paths /index.html"
           }
         }
-      }
+      },
+      "tags": []
     }
-  },
-  "cli": {
-    "defaultCollection": "@nrwl/angular",
-    "packageManager": "npm"
-  },
-  "schematics": {
-    "@nrwl/angular:application": {
-      "style": "scss",
-      "linter": "eslint",
-      "unitTestRunner": "jest",
-      "e2eTestRunner": "cypress"
-    },
-    "@nrwl/angular:library": {
-      "style": "scss",
-      "linter": "eslint",
-      "unitTestRunner": "jest"
-    },
-    "@nrwl/angular:component": {
-      "style": "scss"
-    },
-    "@schematics/angular:component": {
-      "style": "scss"
-    },
-    "@nrwl/angular:storybook-configuration": {
-      "linter": "eslint"
-    }
-  },
-  "defaultProject": "www"
+  }
 }
