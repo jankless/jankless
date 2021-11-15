@@ -1,0 +1,33 @@
+:host {
+  display: flex;
+  align-items: center;
+  --ball: 30px;
+  --border: calc(var(--ball) / 2);
+  --container: calc(var(--ball) * 1.5);
+
+  button {
+    -webkit-appearance: none;
+    cursor: pointer;
+    border: none;
+    border-radius: var(--border);
+    min-width: var(--container);
+    padding: 0;
+    background-color: var(--background-color-body);
+
+    span {
+      transition: margin-left ease 900;
+      content: '';
+      display: block;
+      width: var(--ball);
+      height: var(--ball);
+      background-color: var(--color);
+      border-radius: var(--border);
+    }
+  }
+
+  .dark & {
+    span {
+      margin-left: auto;
+    }
+  }
+}

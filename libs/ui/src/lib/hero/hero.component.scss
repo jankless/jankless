@@ -1,0 +1,11 @@
+:host {
+  --purple: #3e0068f2;
+  --red: #fd1d1de6;
+  --yellow: #fcb045e6;
+  --sunburst-gradient: linear-gradient(135deg, var(--purple) 11%, var(--red) 55%, var(--yellow));
+  display: block;
+  background: var(--sunburst-gradient);
+  min-height: 90vh;
+  border-bottom-left-radius: 128px;
+  border-bottom-right-radius: 64px;
+}

@@ -1,0 +1,8 @@
+:host {
+  display: block;
+  -webkit-appearance: none;
+  border: var(--border-width) var(--border-style) var(--link-color);
+  background-color: var(--background-color);
+  text-transform: uppercase;
+  padding: var(--gap-large) var(--gap-extra-large);
+}

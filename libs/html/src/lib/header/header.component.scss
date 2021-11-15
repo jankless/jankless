@@ -1,0 +1,31 @@
+:host {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--background-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  text-align: center;
+  height: auto;
+  text-transform: uppercase;
+  color: var(--color);
+
+  &.open {
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  @media (min-width: 640px) {
+    display: inline-flex;
+    padding: 0 var(--gap-extra-large);
+    border-bottom-left-radius: var(--border-notch);
+    border-bottom-right-radius: var(--border-notch);
+
+    button {
+      display: none;
+    }
+  }
+}

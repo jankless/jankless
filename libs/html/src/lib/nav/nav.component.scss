@@ -1,0 +1,13 @@
+:host {
+  display: none;
+  flex-direction: column;
+
+  @media (min-width: 640px) {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .open & {
+    display: flex;
+  }
+}

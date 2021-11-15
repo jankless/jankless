@@ -1,3 +1,13 @@
+<header>
+  <nav>
+    <a routerLink="">home</a>
+    <a routerLinkActive="active" routerLink="about">about</a>
+    <a routerLinkActive="active" routerLink="services">services</a>
+    <a routerLinkActive="active" routerLink="contact">contact</a>
+  </nav>
+
+  <jankless-switch switch></jankless-switch>
+</header>
 <main>
-  <img width="100%" src="assets/favicon/jk.svg" alt="JK" />
+  <router-outlet></router-outlet>
 </main>
