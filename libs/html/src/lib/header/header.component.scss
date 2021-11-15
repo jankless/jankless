@@ -1,8 +1,7 @@
 :host {
   position: fixed;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 100%;
   background: var(--background-color);
   display: flex;
   flex-direction: row;
@@ -11,14 +10,31 @@
   height: auto;
   text-transform: uppercase;
   color: var(--color);
+  padding: 0 var(--gap-large);
+  box-sizing: border-box;
+  align-items: center;
+
+  &:not(.open) {
+    button {
+      margin-left: auto;
+    }
+  }
 
   &.open {
     height: 100vh;
     flex-direction: column;
     justify-content: center;
+
+    &::ng-deep jankless-switch {
+      position: fixed;
+      bottom: 0;
+    }
   }
 
   @media (min-width: 640px) {
+    width: initial;
+    left: 50%;
+    transform: translateX(-50%);
     display: inline-flex;
     padding: 0 var(--gap-extra-large);
     border-bottom-left-radius: var(--border-notch);

@@ -12,4 +12,8 @@
     text-decoration: overline;
     text-decoration-color: var(--link-color);
   }
+
+  .open & {
+    text-decoration: initial;
+  }
 }
