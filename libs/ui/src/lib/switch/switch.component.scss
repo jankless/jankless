@@ -1,27 +1,28 @@
 :host {
-  display: flex;
-  align-items: center;
   --ball: 30px;
   --container: calc(var(--ball) * 1.75);
 
-  button {
-    -webkit-appearance: none;
-    cursor: pointer;
-    border: var(--border-width) var(--link-color) var(--border-style);
-    border-radius: var(--ball);
-    min-width: var(--container);
-    padding: 0;
-    background-color: var(--background-color-body);
+  -webkit-appearance: none;
+  cursor: pointer;
+  border: var(--border-width) var(--link-color) var(--border-style);
+  border-radius: var(--ball);
+  min-width: var(--container);
+  padding: 0;
+  background-color: var(--background-color-body);
 
-    span {
-      transition: margin-left ease 900;
-      content: '';
-      display: block;
-      width: var(--ball);
-      height: var(--ball);
-      background-color: var(--color);
-      border-radius: var(--ball);
-    }
+  span {
+    transition: margin-left ease 900;
+    content: '';
+    display: flex;
+    width: var(--ball);
+    height: var(--ball);
+    background-color: var(--color);
+    border-radius: var(--ball);
+    align-items: center;
+    justify-content: center;
+    line-height: var(--ball);
+    font-size: var(--ball);
+    color: var(--background-color);
   }
 
   .dark & {

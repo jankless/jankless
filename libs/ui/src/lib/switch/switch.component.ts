@@ -1,7 +1,7 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'jankless-switch',
+  selector: 'button[type="switch"]',
   templateUrl: './switch.component.html',
   styleUrls: ['./switch.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -13,7 +13,13 @@ export class SwitchComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  handleClick(event: any) {
+  get isDark() {
+    let body = document.querySelector('body');
+    return body?.classList.contains('dark');
+  }
+
+  @HostListener('click')
+  handleClick() {
     try {
       let body = document.querySelector('body');
       body?.classList.toggle('dark');

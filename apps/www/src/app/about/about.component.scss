@@ -23,8 +23,8 @@
     margin-top: var(--space);
     margin-bottom: var(--space);
   }
-}
 
-::ng-deep header {
-  display: none !important;
+  jankless-switch {
+    margin: 0 auto;
+  }
 }
