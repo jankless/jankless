@@ -6,7 +6,9 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    environment: Production
+    environment:
+      name: Production
+      url: https://jankless.com
     steps:
       - name: Checkout
         uses: actions/checkout@v2
