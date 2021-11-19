@@ -5,6 +5,7 @@
   margin-top: var(--gap-extra-large);
   margin-bottom: 0;
   padding: var(--gap);
+  box-sizing: border-box;
 
   p {
     max-width: 640px;
