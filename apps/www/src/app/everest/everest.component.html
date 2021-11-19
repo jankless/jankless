@@ -1,0 +1,16 @@
+<img [width]="img.width" [src]="img.src" [alt]="img.alt">
+<p>
+    {{ p.content }}
+</p>
+<video controls [width]="video.width" [poster]="video.poster">
+
+    <source [src]="video.sources.webm.src" [type]="video.sources.webm.type">
+
+    <source [src]="video.sources.mp4.src" [type]="video.sources.mp4.type">
+
+    {{video.content}}
+</video>
+
+<a [href]="a.href" [target]="a.target">{{a.content}}</a>
+
+<button type="switch"></button>
