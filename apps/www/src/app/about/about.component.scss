@@ -1,3 +1,25 @@
 :host {
+  --space: calc(var(--gap-extra-large) * 3);
   display: block;
+  text-align: center;
+  margin-top: var(--gap-extra-large);
+  margin-bottom: 0;
+  padding: var(--gap);
+
+  p {
+    max-width: 640px;
+    margin: var(--space) auto;
+    margin-top: var(--gap-extra-large);
+    font-weight: 300;
+    letter-spacing: 0.2px;
+  }
+
+  video {
+    max-width: 100%;
+  }
+
+  a {
+    margin-top: var(--space);
+    margin-bottom: var(--space);
+  }
 }
