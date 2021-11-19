@@ -23,3 +23,7 @@
     margin-bottom: var(--space);
   }
 }
+
+::ng-deep header {
+  display: none !important;
+}
